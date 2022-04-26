@@ -24,7 +24,7 @@ def onesec():
             f"https://www.1secmail.com/api/v1/?action=readMessage&login={sec}&domain=yoggm.com&id={json_data[0]['id']}"
         ).text
         print(
-            f"""Тема:{json_data[0]['subject']}\nОт:{json_data[0]['from']}\nID : {json_data[0]['id']}\nСообщение : {json.loads(re)['textBody']}"""
+            f"Subject:{json_data[0]['subject']}\nFrom:{json_data[0]['from']}\nID : {json_data[0]['id']}\nMessage : {json.loads(re)['textBody']}"
         )
     except:
         print("ERROR")
